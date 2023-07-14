@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A659A6B2A61C6E300E04A3E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A659A6A2A61C6E300E04A3E /* Message.swift */; };
+		3A659A6D2A61DE8A00E04A3E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A659A6C2A61DE8A00E04A3E /* MessageView.swift */; };
+		3AEEA1872A61B1DD00DDD729 /* GPT_VIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1862A61B1DD00DDD729 /* GPT_VIApp.swift */; };
+		3AEEA1892A61B1DD00DDD729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1882A61B1DD00DDD729 /* ContentView.swift */; };
+		3AEEA18B2A61B1DF00DDD729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEEA18A2A61B1DF00DDD729 /* Assets.xcassets */; };
+		3AEEA18E2A61B1DF00DDD729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEEA18D2A61B1DF00DDD729 /* Preview Assets.xcassets */; };
+		3AEEA1902A61B1DF00DDD729 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA18F2A61B1DF00DDD729 /* Persistence.swift */; };
+		3AEEA1932A61B1DF00DDD729 /* GPT_VI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1912A61B1DF00DDD729 /* GPT_VI.xcdatamodeld */; };
+		3AEEA1A02A61B35300DDD729 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA19F2A61B35300DDD729 /* HomeView.swift */; };
+		3AEEA1A22A61B4DA00DDD729 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A12A61B4DA00DDD729 /* ConversationView.swift */; };
+		3AEEA1A42A61B53500DDD729 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A32A61B53500DDD729 /* Conversation.swift */; };
+		3AEEA1A62A61B94300DDD729 /* NewChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A52A61B94300DDD729 /* NewChatView.swift */; };
+		3AEEA1A82A61C39800DDD729 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A72A61C39800DDD729 /* HistoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A659A6A2A61C6E300E04A3E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3A659A6C2A61DE8A00E04A3E /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		3AEEA1832A61B1DD00DDD729 /* GPT VI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPT VI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEEA1862A61B1DD00DDD729 /* GPT_VIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_VIApp.swift; sourceTree = "<group>"; };
+		3AEEA1882A61B1DD00DDD729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3AEEA18A2A61B1DF00DDD729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AEEA18D2A61B1DF00DDD729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AEEA18F2A61B1DF00DDD729 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3AEEA1922A61B1DF00DDD729 /* GPT_VI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPT_VI.xcdatamodel; sourceTree = "<group>"; };
+		3AEEA19F2A61B35300DDD729 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3AEEA1A12A61B4DA00DDD729 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		3AEEA1A32A61B53500DDD729 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		3AEEA1A52A61B94300DDD729 /* NewChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatView.swift; sourceTree = "<group>"; };
+		3AEEA1A72A61C39800DDD729 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AEEA1802A61B1DD00DDD729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AEEA17A2A61B1DD00DDD729 = {
+			isa = PBXGroup;
+			children = (
+				3AEEA1852A61B1DD00DDD729 /* GPT VI */,
+				3AEEA1842A61B1DD00DDD729 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AEEA1842A61B1DD00DDD729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEA1832A61B1DD00DDD729 /* GPT VI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AEEA1852A61B1DD00DDD729 /* GPT VI */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEA19E2A61B24300DDD729 /* Persistence */,
+				3AEEA19D2A61B23A00DDD729 /* Services */,
+				3AEEA19C2A61B23500DDD729 /* Networking */,
+				3AEEA19B2A61B23100DDD729 /* Controllers */,
+				3AEEA19A2A61B22A00DDD729 /* Views */,
+				3AEEA1862A61B1DD00DDD729 /* GPT_VIApp.swift */,
+				3AEEA1882A61B1DD00DDD729 /* ContentView.swift */,
+				3AEEA1992A61B21A00DDD729 /* Models */,
+				3AEEA18A2A61B1DF00DDD729 /* Assets.xcassets */,
+				3AEEA18F2A61B1DF00DDD729 /* Persistence.swift */,
+				3AEEA1912A61B1DF00DDD729 /* GPT_VI.xcdatamodeld */,
+				3AEEA18C2A61B1DF00DDD729 /* Preview Content */,
+			);
+			path = "GPT VI";
+			sourceTree = "<group>";
+		};
+		3AEEA18C2A61B1DF00DDD729 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEA18D2A61B1DF00DDD729 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AEEA1992A61B21A00DDD729 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEA1A32A61B53500DDD729 /* Conversation.swift */,
+				3A659A6A2A61C6E300E04A3E /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AEEA19A2A61B22A00DDD729 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEA19F2A61B35300DDD729 /* HomeView.swift */,
+				3AEEA1A72A61C39800DDD729 /* HistoryView.swift */,
+				3AEEA1A52A61B94300DDD729 /* NewChatView.swift */,
+				3AEEA1A12A61B4DA00DDD729 /* ConversationView.swift */,
+				3A659A6C2A61DE8A00E04A3E /* MessageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AEEA19B2A61B23100DDD729 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3AEEA19C2A61B23500DDD729 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3AEEA19D2A61B23A00DDD729 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3AEEA19E2A61B24300DDD729 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AEEA1822A61B1DD00DDD729 /* GPT VI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AEEA1962A61B1DF00DDD729 /* Build configuration list for PBXNativeTarget "GPT VI" */;
+			buildPhases = (
+				3AEEA17F2A61B1DD00DDD729 /* Sources */,
+				3AEEA1802A61B1DD00DDD729 /* Frameworks */,
+				3AEEA1812A61B1DD00DDD729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPT VI";
+			productName = "GPT VI";
+			productReference = 3AEEA1832A61B1DD00DDD729 /* GPT VI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AEEA17B2A61B1DD00DDD729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3AEEA1822A61B1DD00DDD729 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3AEEA17E2A61B1DD00DDD729 /* Build configuration list for PBXProject "GPT VI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AEEA17A2A61B1DD00DDD729;
+			productRefGroup = 3AEEA1842A61B1DD00DDD729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AEEA1822A61B1DD00DDD729 /* GPT VI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AEEA1812A61B1DD00DDD729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEEA18E2A61B1DF00DDD729 /* Preview Assets.xcassets in Resources */,
+				3AEEA18B2A61B1DF00DDD729 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AEEA17F2A61B1DD00DDD729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEEA1932A61B1DF00DDD729 /* GPT_VI.xcdatamodeld in Sources */,
+				3AEEA1A62A61B94300DDD729 /* NewChatView.swift in Sources */,
+				3AEEA1902A61B1DF00DDD729 /* Persistence.swift in Sources */,
+				3AEEA1892A61B1DD00DDD729 /* ContentView.swift in Sources */,
+				3AEEA1A02A61B35300DDD729 /* HomeView.swift in Sources */,
+				3AEEA1A42A61B53500DDD729 /* Conversation.swift in Sources */,
+				3A659A6D2A61DE8A00E04A3E /* MessageView.swift in Sources */,
+				3AEEA1872A61B1DD00DDD729 /* GPT_VIApp.swift in Sources */,
+				3A659A6B2A61C6E300E04A3E /* Message.swift in Sources */,
+				3AEEA1A82A61C39800DDD729 /* HistoryView.swift in Sources */,
+				3AEEA1A22A61B4DA00DDD729 /* ConversationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AEEA1942A61B1DF00DDD729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AEEA1952A61B1DF00DDD729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AEEA1972A61B1DF00DDD729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPT VI/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HR3MK32U8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanmcrae.GPT-VI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AEEA1982A61B1DF00DDD729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPT VI/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HR3MK32U8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanmcrae.GPT-VI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AEEA17E2A61B1DD00DDD729 /* Build configuration list for PBXProject "GPT VI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEEA1942A61B1DF00DDD729 /* Debug */,
+				3AEEA1952A61B1DF00DDD729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AEEA1962A61B1DF00DDD729 /* Build configuration list for PBXNativeTarget "GPT VI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEEA1972A61B1DF00DDD729 /* Debug */,
+				3AEEA1982A61B1DF00DDD729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AEEA1912A61B1DF00DDD729 /* GPT_VI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AEEA1922A61B1DF00DDD729 /* GPT_VI.xcdatamodel */,
+			);
+			currentVersion = 3AEEA1922A61B1DF00DDD729 /* GPT_VI.xcdatamodel */;
+			path = GPT_VI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3AEEA17B2A61B1DD00DDD729 /* Project object */;
+}
