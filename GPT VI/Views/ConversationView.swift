@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct ConversationView: View {
-    // Mock Data
-    let messages = [
-            Message(content: "Hello, GPT VI!", sender: .user),
-            Message(content: "Hi there! How can I assist you today?", sender: .server)
-        ]
+    var conversation: Conversation
+    @StateObject var speechService = SpeechService()
     
     var body: some View {
         NavigationView {
@@ -20,29 +17,46 @@ struct ConversationView: View {
                 Spacer()
                 
                 // Each Message
-                ForEach(messages) { message in
+                ForEach(conversation.messages) { message in
                     MessageView(message: message)
                 }
                 .padding(.horizontal, 8)
+                
+                // Transcribed Text
+                if !speechService.transcribedText.isEmpty {
+                    MessageView(message: Message(content: speechService.transcribedText, sender: .user))
+                        .padding(.horizontal, 8)
+                }
                 
                 Spacer()
                 
                 // Microphone button
                 Button(action: {
-                    print("Listening to user input...")
+                    if speechService.isRecording {
+                        speechService.stopRecording()
+                    } else {
+                        speechService.startRecording()
+                    }
                 }) {
-                    Image(systemName: "mic.fill")
+                    // Dynamically update voice UI based on recording status
+                    let size: CGFloat = speechService.isRecording ? 30 : 40
+                    let padding: CGFloat = speechService.isRecording ? 15 : 10
+                    let icon: String = speechService.isRecording ? "stop.fill" : "mic.fill"
+                    
+                    Image(systemName: icon)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 70, height: 70)
-                        .padding(10)
+                        .frame(width: size, height: size)
+                        .padding(padding)
                         .background(Color(hue: 0.603, saturation: 0.027, brightness: 0.959))
                         .cornerRadius(45)
                 }
                 .padding(4)
-                .background(.blue)
+                .background(speechService.isSpeechRecognitionAvailable ? .blue : .gray)
                 .clipShape(Circle())
                 .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 4)
+                .offset(x: 0, y: -50)
+                .disabled(!speechService.isSpeechRecognitionAvailable)
                 
             }
         }
@@ -53,6 +67,6 @@ struct ConversationView: View {
 
 struct ConversationView_Previews: PreviewProvider {
     static var previews: some View {
-        ConversationView()
+        ConversationView(conversation: ModelData().conversation)
     }
 }

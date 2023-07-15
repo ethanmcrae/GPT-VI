@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3A659A6B2A61C6E300E04A3E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A659A6A2A61C6E300E04A3E /* Message.swift */; };
 		3A659A6D2A61DE8A00E04A3E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A659A6C2A61DE8A00E04A3E /* MessageView.swift */; };
+		3ACF3A7A2A62607B00E062AB /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF3A792A62607B00E062AB /* ConversationController.swift */; };
+		3ACF3A7C2A62622A00E062AB /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF3A7B2A62622A00E062AB /* WebSocketManager.swift */; };
+		3ACF3A7E2A626CA000E062AB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF3A7D2A626CA000E062AB /* ModelData.swift */; };
+		3ACF3A802A62F67200E062AB /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF3A7F2A62F67200E062AB /* SpeechService.swift */; };
 		3AEEA1872A61B1DD00DDD729 /* GPT_VIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1862A61B1DD00DDD729 /* GPT_VIApp.swift */; };
 		3AEEA1892A61B1DD00DDD729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1882A61B1DD00DDD729 /* ContentView.swift */; };
 		3AEEA18B2A61B1DF00DDD729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEEA18A2A61B1DF00DDD729 /* Assets.xcassets */; };
@@ -18,13 +22,17 @@
 		3AEEA1A02A61B35300DDD729 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA19F2A61B35300DDD729 /* HomeView.swift */; };
 		3AEEA1A22A61B4DA00DDD729 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A12A61B4DA00DDD729 /* ConversationView.swift */; };
 		3AEEA1A42A61B53500DDD729 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A32A61B53500DDD729 /* Conversation.swift */; };
-		3AEEA1A62A61B94300DDD729 /* NewChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A52A61B94300DDD729 /* NewChatView.swift */; };
+		3AEEA1A62A61B94300DDD729 /* StartConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A52A61B94300DDD729 /* StartConversationView.swift */; };
 		3AEEA1A82A61C39800DDD729 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEA1A72A61C39800DDD729 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A659A6A2A61C6E300E04A3E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3A659A6C2A61DE8A00E04A3E /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		3ACF3A792A62607B00E062AB /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
+		3ACF3A7B2A62622A00E062AB /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		3ACF3A7D2A626CA000E062AB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3ACF3A7F2A62F67200E062AB /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		3AEEA1832A61B1DD00DDD729 /* GPT VI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPT VI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEEA1862A61B1DD00DDD729 /* GPT_VIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_VIApp.swift; sourceTree = "<group>"; };
 		3AEEA1882A61B1DD00DDD729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,7 +43,7 @@
 		3AEEA19F2A61B35300DDD729 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3AEEA1A12A61B4DA00DDD729 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
 		3AEEA1A32A61B53500DDD729 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
-		3AEEA1A52A61B94300DDD729 /* NewChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatView.swift; sourceTree = "<group>"; };
+		3AEEA1A52A61B94300DDD729 /* StartConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartConversationView.swift; sourceTree = "<group>"; };
 		3AEEA1A72A61C39800DDD729 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3AEEA1A32A61B53500DDD729 /* Conversation.swift */,
+				3ACF3A7D2A626CA000E062AB /* ModelData.swift */,
 				3A659A6A2A61C6E300E04A3E /* Message.swift */,
 			);
 			path = Models;
@@ -107,7 +116,7 @@
 			children = (
 				3AEEA19F2A61B35300DDD729 /* HomeView.swift */,
 				3AEEA1A72A61C39800DDD729 /* HistoryView.swift */,
-				3AEEA1A52A61B94300DDD729 /* NewChatView.swift */,
+				3AEEA1A52A61B94300DDD729 /* StartConversationView.swift */,
 				3AEEA1A12A61B4DA00DDD729 /* ConversationView.swift */,
 				3A659A6C2A61DE8A00E04A3E /* MessageView.swift */,
 			);
@@ -117,6 +126,7 @@
 		3AEEA19B2A61B23100DDD729 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3ACF3A792A62607B00E062AB /* ConversationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,6 +134,7 @@
 		3AEEA19C2A61B23500DDD729 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3ACF3A7B2A62622A00E062AB /* WebSocketManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 		3AEEA19D2A61B23A00DDD729 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3ACF3A7F2A62F67200E062AB /* SpeechService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -213,7 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AEEA1932A61B1DF00DDD729 /* GPT_VI.xcdatamodeld in Sources */,
-				3AEEA1A62A61B94300DDD729 /* NewChatView.swift in Sources */,
+				3AEEA1A62A61B94300DDD729 /* StartConversationView.swift in Sources */,
+				3ACF3A802A62F67200E062AB /* SpeechService.swift in Sources */,
 				3AEEA1902A61B1DF00DDD729 /* Persistence.swift in Sources */,
 				3AEEA1892A61B1DD00DDD729 /* ContentView.swift in Sources */,
 				3AEEA1A02A61B35300DDD729 /* HomeView.swift in Sources */,
@@ -221,8 +234,11 @@
 				3A659A6D2A61DE8A00E04A3E /* MessageView.swift in Sources */,
 				3AEEA1872A61B1DD00DDD729 /* GPT_VIApp.swift in Sources */,
 				3A659A6B2A61C6E300E04A3E /* Message.swift in Sources */,
+				3ACF3A7C2A62622A00E062AB /* WebSocketManager.swift in Sources */,
 				3AEEA1A82A61C39800DDD729 /* HistoryView.swift in Sources */,
+				3ACF3A7A2A62607B00E062AB /* ConversationController.swift in Sources */,
 				3AEEA1A22A61B4DA00DDD729 /* ConversationView.swift in Sources */,
+				3ACF3A7E2A626CA000E062AB /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,8 @@
 				DEVELOPMENT_TEAM = 6HR3MK32U8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record your speech.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app requires access to speech recognition.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -383,6 +401,8 @@
 				DEVELOPMENT_TEAM = 6HR3MK32U8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to record your speech.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app requires access to speech recognition.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

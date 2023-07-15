@@ -8,6 +8,7 @@
 import Foundation
 
 struct Conversation: Identifiable {
-    let id: Int
+    let id = UUID()
     let title: String
+    var messages: [Message]
 }

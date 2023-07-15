@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct NewChatView: View {
+struct StartConversationView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         ZStack {
             VStack {
@@ -15,7 +17,7 @@ struct NewChatView: View {
                 
                 Rectangle()
                     .frame(height: 137)
-                    .foregroundColor(Color(red: 0.295, green: 0.516, blue: 0.689))
+                    .foregroundColor(.blue)
                     .ignoresSafeArea(.all)
                     .offset(x: 0, y: 55.0)
                     .shadow(color: .black.opacity(0.4), radius: 5, x: 0, y: 0)
@@ -25,14 +27,14 @@ struct NewChatView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: ConversationView()
+                    destination: ConversationView(conversation: ModelData().conversation)
                 ) {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
                         .frame(width: 70, height: 70)
                         .padding(3)
-                        .background(.white)
-                        .foregroundColor(Color(hue: 0.573, saturation: 0.576, brightness: 0.691))
+                        .background(colorScheme == .dark ? .black : .white)
+                        .foregroundColor(.blue)
                         .cornerRadius(40)
                         .shadow(color: .black.opacity(0.3), radius: 8, x: 0, y: 2)
                 }
@@ -42,8 +44,8 @@ struct NewChatView: View {
     }
 }
 
-struct NewChatView_Previews: PreviewProvider {
+struct StartConversationView_Previews: PreviewProvider {
     static var previews: some View {
-        NewChatView()
+        StartConversationView()
     }
 }

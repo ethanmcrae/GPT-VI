@@ -10,9 +10,32 @@ import SwiftUI
 struct HistoryView: View {
     // Mock data
     let conversations = [
-        Conversation(id: 1, title: "Conversation 1"),
-        Conversation(id: 2, title: "Conversation 2"),
-        Conversation(id: 3, title: "Conversation 3"),
+        Conversation(
+            title: "Conversation 1",
+            messages: [
+                Message(
+                    content: "Hello, GPT VI!",
+                    sender: .user
+                ),
+                Message(
+                    content: "Hi there! How can I assist you today?",
+                    sender: .server
+                )
+            ]
+        ),
+        Conversation(
+            title: "Conversation 2",
+            messages: [
+                Message(
+                    content: "Hello, GPT VI!",
+                    sender: .user
+                ),
+                Message(
+                    content: "Hi there! How can I assist you today?",
+                    sender: .server
+                )
+            ]
+        )
     ]
     
     var body: some View {
@@ -21,7 +44,7 @@ struct HistoryView: View {
                 .font(.title2)
             
             List(conversations) { conversation in
-                NavigationLink(destination: ConversationView()) {
+                NavigationLink(destination: ConversationView(conversation: conversation)) {
                     Text(conversation.title)
                 }
             }
